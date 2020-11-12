@@ -1,0 +1,79 @@
+			TABELA SEKCIJA
+
+Redni br.		Ime		Velicina		Prava pristupa
+1         		UND     		0         		
+2         		data     		20         		rw
+4         		djokson     		22         		rw
+3         		text     		97         		rwx
+
+
+			TABELA SIMBOLA
+
+Redni br.		Ime					Sekcija				Vrednost		Local|Global
+7          		a           		text         		1         		1
+7          		b           		djokson         		-9999         		1
+5          		c           		UND         		-9999         		1
+9          		d           		djokson         		-16         		0
+10          		e           		djokson         		12         		0
+8          		f           		text         		97         		0
+6          		g           		data         		18         		0
+			IZLAZNI KOD UND SEKCIJE
+
+			IZLAZNI KOD data SEKCIJE
+
+14 fb  e 
+10  0  0 
+ 0  0  0  0  0  0  0  0  0 
+8 0 a 0 
+			IZLAZNI KOD djokson SEKCIJE
+
+9c a0 0 0 
+a4 a0 12 0 
+ac 82 10 0 
+b4 84 f0 ff 
+bc a0 f0 ff 
+c0 
+c8 
+			IZLAZNI KOD text SEKCIJE
+
+8 
+14 22 0 5 0 
+1c 48 
+24 42 84 f 0 
+2c 24 88 ed ff 
+34 42 80 f 0 
+38 a0 0 0 a0 12 0 
+44 0 61 0 a0 64 0 
+44 8e fb ff 0 3c 0 
+4c a0 0 0 a0 c 0 
+54 22 
+5c 8e fb ff 0 12 0 
+64 22 46 
+6c 8e eb ff 0 f0 ff 
+74 a0 12 0 80 ed ff 
+7c a0 64 0 0 a 0 
+84 0 12 0 0 9 0 
+8c 80 f 0 
+94 24 
+
+			RELOKACIONI ZAPIS 
+
+2		R_386_32		djokson		7
+6		R_386_32		djokson		4
+10		R_386_32		djokson		4
+18		R_386_32		djokson		4
+15		R_386_32		text		3
+20		R_386_32		text		3
+25		R_386_32		text		7
+27		R_386_32		text		3
+32		R_386_32		text		3
+39		R_386_PC32		text		7
+46		R_386_32		text		7
+48		R_386_32		text		3
+55		R_386_PC32		text		7
+57		R_386_32		text		3
+65		R_386_PC32		text		3
+67		R_386_32		text		3
+72		R_386_32		text		3
+74		R_386_32		text		3
+86		R_386_32		text		3

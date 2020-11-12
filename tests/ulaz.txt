@@ -1,0 +1,42 @@
+
+.extern c
+
+.data
+.word 20, -5, 14
+.byte 16, e, f
+.skip 9
+
+g: byte 8, 10
+
+.text
+halt
+a:xchg r1, 5
+int [r4]
+mov [r1], r2h[15]
+add r2, r4l[d]
+sub [r1], r0[g]
+mulb a, g
+divw &f, *100
+div $b, 60
+cmp a, e
+not r1
+and $a, &g
+or r1, [r3]
+xor $d, &d
+test g, r0[d]
+shl *100, 10
+shr &g, 9
+push r0[15]
+pop r2
+f:
+.section djokson rwx
+jmp a
+jeq g
+.equ d, -16
+jne r1[g]
+e:
+jgt r2[d]
+call d
+ret
+.global a, b
+iret
